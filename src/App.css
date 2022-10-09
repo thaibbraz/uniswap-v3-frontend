@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #17262e;
+  background-color: #e3eef3;
   min-height: 100vh;
 }
 
@@ -53,9 +53,9 @@ body {
   border-color: rgb(213, 0, 102) !important;
 }
 
-/* .hoverBold:hover {
-  background-color: rgba(0, 0, 0, 0.186);
-} */
+.hoverBold:hover {
+  font-weight: 800;
+}
 
 /******************************************************************************/
 /* Swap Container */
@@ -65,13 +65,13 @@ body {
 }
 
 .swapContainer {
-  background-color: rgb(28, 27, 27);
+  background-color: rgb(203, 231, 240);
   width: 440px;
   height: 350px;
   margin: 0 auto;
   top: 50%;
   border-radius: 24px;
-
+  border: 1px solid #fff;
   padding: 6px;
 }
 
@@ -81,7 +81,7 @@ body {
 }
 
 .swapText {
-  color: rgb(255, 255, 255);
+  color: #000;
   font-size: 20px;
 }
 
@@ -209,7 +209,4 @@ body {
 .inputFieldUnitsContainer {
   padding-left: 0px !important;
   padding-top: 14px;
-}
-.btn {
-  background-color: #fff !important;
 }

@@ -2,7 +2,7 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import { GearFill } from "react-bootstrap-icons";
-
+import logo from "./assets/uniswapLogo.png";
 import PageButton from "./components/PageButton";
 import ConnectButton from "./components/ConnectButton";
 import ConfigModal from "./components/ConfigModal";
@@ -94,24 +94,32 @@ function App() {
   return (
     <div className="App">
       <div className="appNav">
-        <div className="my-2 buttonContainer buttonContainerTop">
-          <PageButton name={"Swap"} isBold={true} />
-          <PageButton name={"Pool"} />
-          <PageButton name={"Vote"} />
-          <PageButton name={"Charts"} />
-        </div>
-
-        <div className="rightNav">
-          <div className="connectButtonContainer">
-            <ConnectButton
-              provider={provider}
-              isConnected={isConnected}
-              signerAddress={signerAddress}
-              getSigner={getSigner}
-            />
+        <div className="flex justify-between">
+          <div className="logo-icon">
+            <img src={logo}></img>
           </div>
-          <div className="my-2 buttonContainer">
-            <PageButton name={"..."} isBold={true} />
+          <div className="buttonContainerTop">
+            <div className="buttonContainer">
+              <PageButton name={"Swap"} isBold={true} />
+              <PageButton name={"Pool"} />
+              <PageButton name={"Vote"} />
+              <PageButton name={"Charts"} />
+            </div>
+          </div>
+          <div className="rightNav flex flex-end">
+            <div className="connectButtonContainer">
+              <ConnectButton
+                provider={provider}
+                isConnected={isConnected}
+                signerAddress={signerAddress}
+                getSigner={getSigner}
+              />
+            </div>
+            <div>
+              <div className="buttonContainer">
+                <PageButton name={"..."} isBold={true} />
+              </div>
+            </div>
           </div>
         </div>
       </div>

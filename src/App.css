@@ -1,12 +1,20 @@
 .App {
   text-align: center;
-  background-color: #e3eef3;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 39%,
+    rgba(15, 23, 90, 1) 52%,
+    rgba(23, 37, 124, 1) 58%,
+    rgba(18, 37, 129, 1) 72%,
+    rgba(18, 32, 103, 1) 76%
+  );
   min-height: 100vh;
 }
 
 body {
+  margin: 0%;
   max-width: 100%;
-  margin: 0 auto;
 }
 
 #root {
@@ -15,8 +23,15 @@ body {
 
 /******************************************************************************/
 /* Navbar */
+
+.logo-icon {
+  width: 50px;
+}
+
 .appNav {
-  margin: 0 16px 0 0;
+  margin: 0 auto;
+  max-width: 1700px;
+  margin-top: 10px;
 }
 
 .rightNav {
@@ -24,13 +39,19 @@ body {
 }
 
 .pageButtonBold {
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .buttonContainer {
-  background-color: #fff;
-  border-radius: 16px;
-  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.606);
+  color: #fff;
+  border-radius: 9px;
+  padding: 9px;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  justify-content: space-around;
+  display: flex;
+  /* padding-bottom: 5px; */
 }
 
 .buttonContainerTop {
@@ -41,9 +62,14 @@ body {
   background-color: rgb(253, 234, 241) !important;
   border-radius: 16px !important;
   border: 1px solid #fff !important;
+  padding-left: 2px;
+  padding-right: 2px;
   color: rgb(213, 0, 102) !important;
 }
 
+.btn {
+  margin-right: 5px;
+}
 .connectButtonContainer {
   display: inline-block;
   margin-right: 10px;
@@ -51,10 +77,11 @@ body {
 
 .connectButton:hover {
   border-color: rgb(213, 0, 102) !important;
+  cursor: pointer;
 }
 
 .hoverBold:hover {
-  font-weight: 800;
+  cursor: pointer;
 }
 
 /******************************************************************************/
@@ -65,13 +92,13 @@ body {
 }
 
 .swapContainer {
-  background-color: rgb(203, 231, 240);
+  background-color: rgba(203, 231, 240, 0.097);
   width: 440px;
   height: 350px;
   margin: 0 auto;
   top: 50%;
   border-radius: 24px;
-  border: 1px solid #fff;
+
   padding: 6px;
 }
 
@@ -81,7 +108,7 @@ body {
 }
 
 .swapText {
-  color: #000;
+  color: rgb(255, 255, 255);
   font-size: 20px;
 }
 
@@ -93,7 +120,7 @@ body {
 /******************************************************************************/
 /* Currency Input */
 .currencyInput {
-  background-color: rgb(217, 236, 242);
+  background-color: rgba(203, 231, 240, 0.097);
   margin: 10px !important;
   padding: 10px;
   border-radius: 20px;
@@ -117,7 +144,8 @@ body {
   display: inline-block;
   width: 100%;
   border: none;
-  background-color: rgb(217, 236, 242);
+  color: #fff;
+  background-color: rgba(203, 231, 240, 0);
 }
 .tokenContainer {
   text-align: right;
@@ -125,7 +153,7 @@ body {
 .tokenName {
   font-size: 28px;
   display: block;
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 .balanceContainer {
   display: block;
@@ -134,7 +162,7 @@ body {
   width: 100%;
   font-size: 16px;
   display: inline;
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 
 /******************************************************************************/
